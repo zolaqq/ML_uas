@@ -1,0 +1,12 @@
+---
+config:
+  layout: dagre
+---
+flowchart TD
+    A["Pengumpulan Data"] --> B["Preprocessing Data"]
+    B --> C["Text Cleaning, Tokenisasi, Stopword Removal"]
+    C --> D["Labeling Data - Positif, Negatif, Netral"]
+    D --> E["Ekstraksi Fitur: TF-IDF"]
+    E --> F["Pelatihan Model: Naive Bayes dan SVM"]
+    F --> G["Evaluasi Model"]
+    G --> H["Analisis Hasil Sentimen"]
